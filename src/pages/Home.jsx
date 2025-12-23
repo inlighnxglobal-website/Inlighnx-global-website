@@ -135,10 +135,10 @@ function Home() {
   // Who We Are Carousel - Memoized to prevent re-renders
   const whoWeAreCards = useMemo(() => [
     {
-      title: "About InLighnX Global (InLighn Tech)",
-      content: "At InlighnX Global, we believe that the future of education lies in bridging the gap between academic learning and industry needs. Founded with a passion for providing meaningful and immersive learning experiences, we offer internship programs that equip students and young professionals with practical skills in Full Stack Development, Data Science, and Project Management.",
+      title: "About InlighnTech",
+      content: "At InlighnTech, we believe that the future of education lies in bridging the gap between academic learning and industry needs. Founded with a passion for providing meaningful and immersive learning experiences, we offer internship programs that equip students and young professionals with practical skills in Full Stack Development, Data Science, and Project Management.",
       iconBg: "#14b8a6",
-      image: "https://www.inlighntech.com/wp-content/uploads/2023/07/img-meta6.jpg", // Add your custom image here
+      image: "https://img.sanishtech.com/u/30ceb6ed63a6654ed317b7337e8a7077.jpg", // Add your custom image here
       icon: (
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -154,7 +154,7 @@ function Home() {
       title: "Our Mission",
       content: "To empower students and young professionals by providing immersive, real-world learning experiences through tailored internship programs. We aim to equip our participants with the practical skills and confidence they need to succeed in the fast-evolving tech industry.",
       iconBg: "#ff6b35",
-      image: "https://www.inlighntech.com/wp-content/uploads/2023/07/img-meta5.jpg", // Add your custom image here
+      image: "https://img.sanishtech.com/u/4f56ec9db886a24cc29f288ceeb197d7.jpg", // Add your custom image here
       icon: (
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>

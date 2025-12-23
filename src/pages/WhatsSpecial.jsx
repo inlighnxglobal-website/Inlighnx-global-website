@@ -46,7 +46,7 @@ function WhatsSpecial() {
     {
       title: 'Tables in Database',
       description: 'Data Analysis of Tables in Database',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/07/Screenshot-2025-07-08-at-12.31.13%E2%80%AFPM.png',
+      image: 'https://img.sanishtech.com/u/526a7cd0af6b4610ecb4b2f828e62bb9.png',
       ctaText: 'View Project',
       ctaLink: 'https://www.linkedin.com/posts/avishee-dubey-152329278_sql-postgresql-dataanalysis-activity-7347958385717182464-nQwX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEfdUx0Bju2m32WJAuF-DbWdByJKlYPEGZE',
       tags: ['PostgreSQL + pgAdmin 4 ', 'Excel + CSVs', 'Canva ', 'Github']
@@ -54,7 +54,7 @@ function WhatsSpecial() {
     {
       title: 'Subdomain Enumeration Tool',
       description: 'Subdomain Enumeration Tool in Cybersecurity',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-27-155243.png',
+      image: 'https://img.sanishtech.com/u/e765464674edeb23bcc0706dc421cf8f.png',
       ctaText: 'View Project',
       ctaLink: 'https://drive.google.com/file/d/1zg2KJ6PJJlG3-FY0_tjAewfP0xcpxr1e/view',
       tags: ['Cybersecurity', 'Python', 'Github']
@@ -62,7 +62,7 @@ function WhatsSpecial() {
     {
       title: 'PDF Protector Tool',
       description: 'PDF Protector Tool in Cybersecurity',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-27-155434.png',
+      image: 'https://img.sanishtech.com/u/0dc0235d7c040a491861ac41e41127fa.png',
       ctaText: 'View Project',
       ctaLink: 'https://docs.google.com/presentation/d/1CUslcz6XM013FIqp90nNddkD1va4bm77/edit?slide=id.p1#slide=id.p1',
       tags: ['Cybersecurity', 'Python', 'Github']
@@ -70,7 +70,7 @@ function WhatsSpecial() {
     {
       title: 'Amazon Sales Dashboard',
       description: 'Amazon Sales Dashboard using data analysis',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-27-155626.png',
+      image: 'https://img.sanishtech.com/u/9a75734a7e09070beca7a32b9f6d7635.png',
       ctaText: 'View Project',
       ctaLink: 'https://github.com/G-arimaP/Excel-Project/blob/main/Amazon%20Dashboard.xlsx',
       tags: ['Data Analysis', 'Python', 'Github', 'PowerBI']
@@ -78,7 +78,7 @@ function WhatsSpecial() {
     {
       title: 'Nova – Voice-Activated AI Assistant',
       description: 'Nova – Voice-Activated AI Assistant',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-27-155900.png',
+      image: 'https://img.sanishtech.com/u/88238ab2b6cb9b5a15c1a08916e82634.png',
       ctaText: 'View Project',
       ctaLink: 'https://drive.google.com/file/d/1M8oX1FyaiXdv6kIwwoxRNEP37YPoLRS8/view',
       tags: ['React', 'Firebase', 'Chart.js']
@@ -86,7 +86,7 @@ function WhatsSpecial() {
     {
       title: 'Python Programming Projects',
       description: 'Python Programming Projects',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/05/Screenshot-2025-05-24-130059.png',
+      image: 'https://img.sanishtech.com/u/eab2c0d9880198a1fee7dcc6e3dd58d9.png',
       ctaText: 'View Project',
       ctaLink: 'https://drive.google.com/file/d/1HXIhDx4CIn3ajKDgij7hfDzEqpJNbLsh/view',
       tags: ['Python', 'Github']
@@ -94,7 +94,7 @@ function WhatsSpecial() {
     {
       title: 'AI interview Mocker',
       description: 'Webdevelopment',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/07/Screenshot-2025-07-08-at-12.33.47%E2%80%AFPM.png',
+      image: 'https://img.sanishtech.com/u/d44d94f385ed640acb0d453f3c7c8e43.png',
       ctaText: 'View Project',
       ctaLink: 'https://ai-mock-interview-sonia-sharmas-projects.vercel.app/sign-in?redirect_url=https%3A%2F%2Fai-mock-interview-sonia-sharmas-projects.vercel.app%2Fdashboard%2Finterview%2F335eb553-8aca-43df-81fc-1763dc551a67%2Fstart',
       tags: ['Webdevelopment', 'Hosting','Github']
@@ -102,7 +102,7 @@ function WhatsSpecial() {
     {
       title: 'Flipkart Sales Dashboard',
       description: 'Flipkart Sales Dashboard using data analysis',
-      image: 'https://www.inlighntech.com/wp-content/uploads/2025/07/Screenshot-2025-07-08-at-12.37.26%E2%80%AFPM.png',
+      image: 'https://img.sanishtech.com/u/81a08568d1feac54a68aa7e9bde03fbc.png',
       ctaText: 'View Project',
       ctaLink: 'https://www.linkedin.com/posts/jotham-bhattacharya-a51346230_powerbi-businessanalytics-dashboarddesign-activity-7345348066977185792-jnbZ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnT9RcBLXg7RhZ1-KtA7oqpHgC5uaS2NV4',
       tags: ['Data Analysis', 'Python', 'Github', 'PowerBI']
@@ -803,7 +803,7 @@ function WhatsSpecial() {
                     {/* Image Section */}
                     <div className="relative h-64 lg:h-auto lg:w-3/5 lg:min-h-[450px] overflow-hidden flex items-center justify-center bg-gray-100">
                       <img 
-                        src="https://media.licdn.com/dms/image/v2/D5622AQHThJRGCWH1ig/feedshare-shrink_800/B56ZpUz2VqHIAg-/0/1762359474505?e=1766016000&v=beta&t=u7WKkssOLT5eUqZ42qFqScFf1gT6QISZrFfg3eYXwdM" 
+                        src="https://img.sanishtech.com/u/8f82f573c33db149e4a8762d3881ffb1.jpg" 
                         alt="Ideathon Winner"
                         className="w-full h-full object-contain lg:object-cover"
                         loading="lazy"

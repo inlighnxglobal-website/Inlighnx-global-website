@@ -307,14 +307,14 @@ ${formData.message}
           <p className="aboutus-certifications-subtitle">Recognitions and verifiable credentials</p>
 
           <div className="aboutus-certifications-grid">
-            <a
+           <a
               className="achievement-card slide-from-left aboutus-certification-card"
-              href="https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-30-164507.png"
+              href="https://img.sanishtech.com/u/79f596cd83c0d05122b64102cae10865.png"
               target="_blank"
               rel="noreferrer noopener"
             >
               <div className="achievement-image">
-                <img src="https://www.inlighntech.com/wp-content/uploads/2025/04/Screenshot-2025-04-30-164507.png" alt="Incorporation Certificate" loading="lazy" />
+                <img src="https://img.sanishtech.com/u/79f596cd83c0d05122b64102cae10865.png" alt="Incorporation Certificate" loading="lazy" />
                 <span className="achievement-badge" aria-hidden>+</span>
               </div>
               <div className="achievement-texts">
@@ -330,7 +330,7 @@ ${formData.message}
               rel="noreferrer noopener"
             >
               <div className="achievement-image">
-                <img src="https://www.inlighntech.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-30-at-16.32.01_07ba59ed-780x777.jpg" alt="Startup India Recognitions" loading="lazy" style={{objectFit: 'cover', backgroundColor: '#fff'}} />
+                <img src="https://img.sanishtech.com/u/7f4f00af4f0f3e605733126e2fa80d5e.jpg" alt="Startup India Recognitions" loading="lazy" style={{ objectFit: 'cover', backgroundColor: '#fff' }} />
                 <span className="achievement-badge" aria-hidden>+</span>
               </div>
               <div className="achievement-texts">
