@@ -12,6 +12,7 @@ import PrivacyPolicy from './pages/legal/PrivacyPolicy'
 import TermsAndConditions from './pages/legal/TermsAndConditions'
 import Disclaimers from './pages/legal/Disclaimers'
 import { ProgramsProvider } from './contexts/ProgramsContext'
+import Register from './pages/Register'
 import './App.css'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/disclaimers" element={<Disclaimers />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
           <Footer />
         </div>
