@@ -42,8 +42,8 @@ function NavBar() {
           </Link>
           <span className="mobile-logo-text">InlighnXglobal</span>
         </div>
-        
-        <button 
+
+        <button
           className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -52,15 +52,16 @@ function NavBar() {
           <span></span>
           <span></span>
         </button>
-        
+
         <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={handleLinkClick}>Home</Link>
           <Link to="/about-us" className={`nav-link ${isActive('/about-us') ? 'active' : ''}`} onClick={handleLinkClick}>About Us</Link>
           <Link to="/programs" className={`nav-link ${isActive('/programs') ? 'active' : ''}`} onClick={handleLinkClick}>Programs</Link>
           <Link to="/verify-certificate" className={`nav-link ${isActive('/verify-certificate') ? 'active' : ''}`} onClick={handleLinkClick}>Verify Certificate</Link>
           <Link to="/whats-special" className={`nav-link ${isActive('/whats-special') ? 'active' : ''}`} onClick={handleLinkClick}>What's Special</Link>
+          <Link to="/for-schools" className={`nav-link ${isActive('/for-schools') ? 'active' : ''}`} onClick={handleLinkClick}>For Schools</Link>
           <Link to="/contact-us" className={`nav-link ${isActive('/contact-us') ? 'active' : ''}`} onClick={handleLinkClick}>Contact Us</Link>
-          <a 
+          <a
             href="https://inlighntech.podia.com/login"
             className="login-button login-button-mobile"
             target="_blank"
@@ -70,8 +71,8 @@ function NavBar() {
             Login to Portal
           </a>
         </div>
-        
-        <a 
+
+        <a
           href="https://inlighntech.podia.com/login"
           className="login-button login-button-desktop"
           target="_blank"

@@ -13,6 +13,7 @@ import TermsAndConditions from './pages/legal/TermsAndConditions'
 import Disclaimers from './pages/legal/Disclaimers'
 import { ProgramsProvider } from './contexts/ProgramsContext'
 import Register from './pages/Register'
+import ForSchools from './pages/ForSchools'
 import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/programs" element={<Programs />} />
             <Route path="/verify-certificate" element={<VerifyCertificate />} />
             <Route path="/whats-special" element={<WhatsSpecial />} />
+            <Route path="/for-schools" element={<ForSchools />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
