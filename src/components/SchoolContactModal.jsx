@@ -22,26 +22,42 @@ const SchoolContactModal = ({ isOpen, onClose }) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-
-        console.log('Form submitted:', formData);
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-
-        // Reset form and close after a delay
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setFormData({
-                name: '',
-                email: '',
-                number: '',
-                designation: '',
-                schoolName: '',
-                message: ''
+        try {
+            const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+            const response = await fetch(`${apiBaseUrl}/api/school-applications`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
             });
-            onClose();
-        }, 3000);
+
+            const data = await response.json();
+
+            if (data.success) {
+                setIsSubmitted(true);
+                // Reset form and close after a delay
+                setTimeout(() => {
+                    setIsSubmitted(false);
+                    setFormData({
+                        name: '',
+                        email: '',
+                        number: '',
+                        designation: '',
+                        schoolName: '',
+                        message: ''
+                    });
+                    onClose();
+                }, 3000);
+            } else {
+                alert(data.message || 'Something went wrong. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Server error. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
