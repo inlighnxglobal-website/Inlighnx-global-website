@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -20,12 +20,14 @@ import {
 } from 'react-icons/md';
 import { GiBrain } from 'react-icons/gi';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
+import SchoolContactModal from '../components/SchoolContactModal';
 import './ForSchools.css';
-import heroImg from '../assets/for-schools-hero.png';
+import heroImg from '../assets/school-banner.jpeg';
 
 function ForSchools() {
     const navigate = useNavigate();
     const statsRef = useRef(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const scrollToStats = () => {
         statsRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -96,7 +98,7 @@ function ForSchools() {
                                 skills that prepare students for tomorrow's careers.
                             </p>
                             <div className="hero-actions">
-                                <button className="btn-orange" onClick={() => navigate('/contact-us')}>Partner With Us</button>
+                                <button className="btn-orange" onClick={() => setIsModalOpen(true)}>Implement at your school</button>
                                 <button className="btn-outline" onClick={scrollToStats}>Learn More</button>
                             </div>
                         </motion.div>
@@ -317,6 +319,7 @@ function ForSchools() {
             </motion.section>
 
             <FloatingWhatsApp />
+            <SchoolContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
     );
 }
