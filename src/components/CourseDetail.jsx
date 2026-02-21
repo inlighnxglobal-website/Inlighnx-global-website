@@ -292,7 +292,7 @@ function CourseDetail({ course: courseProp, onClose: onCloseProp }) {
 
                  <button
                   className="apply-now-btn"
-                  onClick={() => navigate('/register')}
+                  onClick={() => navigate('/jobs')}
                 >
                   <span>Apply Now</span>
                   <svg className="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

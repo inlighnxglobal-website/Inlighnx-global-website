@@ -34,7 +34,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/disclaimers" element={<Disclaimers />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/jobs" element={<Register />} />
           </Routes>
           <Footer />
         </div>
