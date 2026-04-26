@@ -67,31 +67,22 @@ const carouselData = [
     src: Aditya,
     linkedin: "https://www.linkedin.com/in/aditya-kumar-6604a8249", 
   },
-
-  // {
-  //   quote:
-  //     "The internship experience at InLighnX was exceptional! The mentorship and hands-on learning opportunities prepared me perfectly for my role at Meta as a Frontend Developer. I couldn't have asked for a better start to my career!",
-  //   name: "Sarah Johnson",
-  //   designation: "Placed at Meta | Frontend Developer",
-  //   src: man2,
-  //   linkedin: "", // Add LinkedIn profile URL here
-  // },
-  // {
-  //   quote:
-  //     "InLighnX's program gave me the confidence and skills needed to succeed. Thanks to the practical training and industry connections, I landed a position at Apple as an iOS Developer. This program truly changed my career trajectory!",
-  //   name: "Michael Chen",
-  //   designation: "Placed at Apple | iOS Developer",
-  //   src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-  //   linkedin: "", // Add LinkedIn profile URL here
-  // },
-  // {
-  //   quote:
-  //     "The comprehensive curriculum and real-world projects at InLighnX were exactly what I needed. I'm now working at Netflix as a Backend Engineer, and I credit this program for my success. The support and guidance were outstanding!",
-  //   name: "Emily Rodriguez",
-  //   designation: "Placed at Netflix | Backend Engineer",
-  //   src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
-  //   linkedin: "", // Add LinkedIn profile URL here
-  // },
+  {
+     quote:
+      "The internship experience enhanced my analytical thinking and business problem-solving skills. It provided real-world exposure that helped me grow into my role as a Business Analyst at Practo.",
+    name: "Abhishek Banaj",
+    designation: "Business Analyst | Practo",
+    src:"https://media.licdn.com/dms/image/v2/D5603AQE27DmzCfnD-Q/profile-displayphoto-crop_800_800/B56Z21_QhFHkAI-/0/1776874754848?e=1778716800&v=beta&t=d_lOtI-mitwAWg-OqTzEedDHUtjVV-eEFxZzXChNG4M",
+    linkedin: "https://www.linkedin.com/in/abhishekbanaj/", 
+  },
+  {
+  quote:
+    "This internship strengthened my understanding of AI security and risk assessment, giving me practical exposure to real-world challenges and preparing me for my role as an AI Security & Risk Trainee at Dutient.",
+  name: "Vatsla Sharma",
+  designation: "AI Security & Risk Trainee | Dutient",
+  src: "https://media.licdn.com/dms/image/v2/D4E35AQEsSXiaPHknvw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1733923898173?e=1777777200&v=beta&t=x8Mp13watyk7Ao8eFfpcisUbtvhgOzGaUA4PXXfkiBs",
+  linkedin: "https://www.linkedin.com/in/vatsla-sharma-/",
+},
 ];
 
 export default function CircularCarousel() {
