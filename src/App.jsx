@@ -14,6 +14,7 @@ import Disclaimers from './pages/legal/Disclaimers'
 import { ProgramsProvider } from './contexts/ProgramsContext'
 import Register from './pages/Register'
 import ForSchools from './pages/ForSchools'
+import Onboarding from './pages/Onboarding'
 import './App.css'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/disclaimers" element={<Disclaimers />} />
             <Route path="/jobs" element={<Register />} />
+            <Route path="/onboarding" element={<Onboarding />} />
           </Routes>
           <Footer />
         </div>
