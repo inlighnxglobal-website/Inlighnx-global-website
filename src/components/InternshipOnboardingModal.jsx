@@ -19,18 +19,35 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle submission logic here
-    console.log(formData);
-    onClose();
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/onboarding`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert('Application submitted successfully!');
+        onClose();
+      } else {
+        alert('Failed to submit application: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while submitting the form. Please try again.');
+    }
   };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 p-4 font-sans">
       {/* Background click to close */}
       <div className="absolute inset-0" onClick={onClose}></div>
-      
+
       <div className="bg-white rounded-[20px] shadow-2xl w-full max-w-[800px] overflow-hidden relative z-10 flex flex-col transform transition-all">
         {/* Header - Vibrant Purple */}
         <div className="bg-[#6b38c9] text-white px-8 py-6 flex justify-between items-start relative overflow-hidden">
@@ -40,7 +57,7 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
             </svg>
           </div>
-          
+
           <div className="flex items-center gap-5 relative z-10">
             <div className="bg-white/20 p-1.5 rounded-xl border border-white/30 backdrop-blur-sm">
               {/* Logo icon */}
@@ -56,7 +73,7 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
               <p className="text-white/90 text-[13px] font-medium mt-0.5">UM Live Project Internship Selection • Career Portal</p>
             </div>
           </div>
-          
+
           <div className="relative z-10 mt-2">
             <span className="border border-white/40 text-white text-[11px] px-4 py-1.5 rounded-full font-semibold uppercase tracking-wider">
               Official Document
@@ -78,11 +95,11 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
                 <label className="block text-[13px] font-bold text-[#333] uppercase tracking-wide">
                   Name <span className="text-red-500">*</span>
                 </label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="name"
                   required
-                  placeholder="Name" 
+                  placeholder="Name"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-[#f8f9fa] border border-[#e5e7eb] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#6b38c9] focus:border-[#6b38c9] transition-colors text-[15px] placeholder-gray-400"
@@ -92,11 +109,11 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
                 <label className="block text-[13px] font-bold text-[#333] uppercase tracking-wide">
                   Email <span className="text-red-500">*</span>
                 </label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   name="email"
                   required
-                  placeholder="Email" 
+                  placeholder="Email"
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-[#f8f9fa] border border-[#e5e7eb] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#6b38c9] focus:border-[#6b38c9] transition-colors text-[15px] placeholder-gray-400"
@@ -108,11 +125,11 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
               <label className="block text-[13px] font-bold text-[#333] uppercase tracking-wide">
                 Phone Number <span className="text-red-500">*</span>
               </label>
-              <input 
-                type="tel" 
+              <input
+                type="tel"
                 name="phone"
                 required
-                placeholder="Phone number" 
+                placeholder="Phone number"
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-[#f8f9fa] border border-[#e5e7eb] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#6b38c9] focus:border-[#6b38c9] transition-colors text-[15px] placeholder-gray-400"
@@ -122,8 +139,8 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
             <div className="pt-4 pb-2">
               <label className="flex items-start gap-3 cursor-pointer group">
                 <div className="relative flex items-start pt-1">
-                  <input 
-                    type="checkbox" 
+                  <input
+                    type="checkbox"
                     name="verified"
                     required
                     checked={formData.verified}
@@ -132,20 +149,20 @@ const InternshipOnboardingModal = ({ isOpen, onClose }) => {
                   />
                 </div>
                 <span className="text-gray-600 text-[14.5px] leading-[1.6]">
-                  <span className="text-red-500 font-bold mr-1">*</span> 
+                  <span className="text-red-500 font-bold mr-1">*</span>
                   I verify that the information provided is accurate and I agree to receive official communications from <span className="font-semibold italic text-[#333]">UM Base Project</span> regarding my application.
                 </span>
               </label>
             </div>
 
             <div className="border-t border-gray-100 pt-8 mt-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="bg-[#6b38c9] hover:bg-[#5a2ea8] text-white text-[15px] font-bold py-3.5 px-8 rounded-lg shadow-md shadow-[#6b38c9]/20 transition-colors w-full md:w-auto text-center"
               >
                 Submit Application
               </button>
-              
+
               <div className="flex items-center justify-center md:justify-end text-gray-400 text-[13px] gap-2 font-medium">
                 <FaLock className="text-gray-400 mb-0.5" />
                 <span>Secure SSL Encrypted Form</span>

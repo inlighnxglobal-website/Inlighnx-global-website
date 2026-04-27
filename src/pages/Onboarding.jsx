@@ -22,12 +22,28 @@ const Onboarding = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle submission logic here
-    console.log(formData);
-    // Navigate to success or programs after submit
-    navigate('/programs');
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/onboarding`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert('Application submitted successfully!');
+        navigate('/programs');
+      } else {
+        alert('Failed to submit application: ' + data.message);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while submitting the form. Please try again.');
+    }
   };
 
   return (
