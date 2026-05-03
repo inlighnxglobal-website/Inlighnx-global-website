@@ -11,7 +11,8 @@ const Onboarding = () => {
     domain: '',
     state: '',
     role: '',
-    verified: false
+    verified: false,
+    shortIntro: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [whatsappLink, setWhatsappLink] = useState('https://chat.whatsapp.com/FOQ0mur19NsKHjR5907WMb');
@@ -209,6 +210,21 @@ const Onboarding = () => {
                   </div>
                 </div>
 
+                <div className="space-y-2">
+                  <label className="block text-[13px] font-bold text-[#333] uppercase tracking-wide">
+                    short intro about you why do you want this internship <span className="text-red-500">*</span>
+                  </label>
+                  <textarea 
+                    name="shortIntro"
+                    required
+                    placeholder="Tell us a bit about yourself and your motivation..." 
+                    value={formData.shortIntro}
+                    onChange={handleChange}
+                    rows="4"
+                    className="w-full px-4 py-3 bg-[#f8f9fa] border border-[#e5e7eb] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#1e3a8a] focus:border-[#1e3a8a] transition-colors text-[15px] placeholder-gray-400 resize-none"
+                  ></textarea>
+                </div>
+
                 <div className="space-y-3 pt-2">
                   <label className="block text-[13px] font-bold text-[#333] uppercase tracking-wide">
                     You are <span className="text-red-500">*</span>
@@ -248,6 +264,29 @@ const Onboarding = () => {
                       I verify that the information provided is accurate and I agree to receive official communications from <span className="font-semibold italic text-[#333]">IG Base Project</span> regarding my application.
                     </span>
                   </label>
+                </div>
+
+                <div className="flex justify-center">
+                  <div className="w-full max-w-[500px] space-y-4">
+                    <a 
+                      href={whatsappLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-[#25D366] hover:bg-[#128C7E] !text-white text-[16px] font-bold py-3.5 px-8 rounded-xl flex items-center justify-center gap-3 transition-all transform hover:scale-[1.01] shadow-lg shadow-[#25D366]/20 group"
+                    >
+                      <FaWhatsapp className="text-xl group-hover:rotate-12 transition-transform" />
+                      Join WhatsApp Community
+                    </a>
+                    
+                    <div className="p-4 bg-amber-50/50 border border-amber-100 rounded-2xl text-left shadow-sm">
+                      <p className="text-red-700 font-bold text-[14px] mb-1.5 flex items-center gap-2">
+                        <span>📢</span> Mandatory to Join WhatsApp Group 📲
+                      </p>
+                      <p className="text-gray-600 text-[12px] font-medium leading-relaxed">
+                        🔔 Note: All important announcements and updates will be shared only on the group.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="border-t border-gray-100 pt-8 mt-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
